@@ -1,0 +1,172 @@
+body{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+}
+.head__carousel{
+    width: 	1920px!important;
+    height: 1080px!important;
+}
+.head__navbar{
+   /* position: relative; */
+   width: 100%vw;
+   height: 10vh;
+   /* background-color: black;
+   opacity: 0.6; */
+   position: relative;
+   position: fixed;
+   top: 0;
+   left: 0;
+   z-index: 1000;
+
+}
+.head__navbar ul{
+    position: fixed;
+    top: 0;
+}
+.head__navbar li{
+    /* position: absolute; */
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+    width: 10vw;
+    margin: 20px;
+    padding:0 10px ;
+    text-align: center;
+}
+.head__navbar a{
+    position: relative;
+    padding: 10px;
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+}
+/* Tạo animation gạch chân */
+.head__navbar a::after{
+    content: "";
+    width: 100%;
+    height: 3px;
+    background-color: white;
+    position: absolute;
+    display: flex;
+    bottom: 0;
+    left: 0;
+    transform: scaleX(0);
+    transition: transform 2s  ease-out;
+}
+.head__navbar a:hover:after{
+    transform: scaleX(1);
+}
+.head__navbar a:hover{
+    font-weight: 800;
+}
+.head__navbar h1{
+    color: white;
+    font-weight: 1000;
+    margin: 0 20px;
+}
+/* Chỉnh carousel header */
+.head__carousel{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}   
+.head__carousel video{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+/* Movie Intro */
+.movie-intro{
+    padding: 30px;
+    width: 90vw;
+    height: fit-content;
+    margin: 0 auto;
+}
+.tittle{
+    color: black;
+    text-align: center;
+    font-family: "Permanent Marker", cursive;
+    margin: 30px 0 60px 0;
+}
+.list-card{
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+}
+.list-card__item{
+    height: 60%;
+    margin: 0 50px;
+}
+#img-container{ 
+    width: 100%;
+    height: 100%;
+    border: 2px black solid;
+    box-shadow: 5px 5px 15px 0px rgba(0, 0, 0, 0.5);
+}
+.list-card__item img{
+    width: 100%;
+    height: 330px;
+}
+#row-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card__title{
+    color: black;
+    text-align: center;
+    padding: 20px 0;
+    font-family: "Permanent Marker", cursive;
+}
+.character-position{
+    color: black;
+    text-align: center;
+    padding-bottom: 30px;
+    font-size: 20px;
+}
+/* Chinh cai khung hinh cau thu */
+.movie-detail{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px white solid;
+    border-radius: 20px;
+    margin: 30px 0;
+    background-color: black;
+}
+.movie-detail img{
+    height: 70%;
+    width: 100%;
+}
+/* style footer */
+.left-col span{
+    font-size: 20px;
+}
+.left-col #dev{
+    font-family: "Allura", cursive;
+    font-weight: 700;
+    font-size: 50px;
+}
+.right-col{
+    text-align: center;
+    margin: auto 0!important;
+    color: black;
+}
+.right-col h4{
+    font-size: 40px;
+    font-weight: 600;
+    text-decoration: underline;
+}
+.icon-container i{
+    color: black;
+    font-size: 60px;
+    padding: 20px;
+}
